@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "plasma-primacy-239619",
+  "private_key_id": "1c21ea35f9c98073e5f3e79ab5101db4ee44146f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2vgBt+kFkWdw2\n85/douDl1VFLvUAFGj3xa7aS8W4jbyM0E8+bjTgMP7jsY7dMgnCLLr40z0AMrzRF\nFOZcHMszrNGjLeseiBs/nV+tt1ZFzz+TIvRyHjQcxpKwy8zyhP04ArLhTPa5nXlD\nbgGBAeyoU9dqK8dtVB8JdUX+3CH3hE2jYr+bqpg8tfNaJZE4kNiJtJSKccE+B00j\nH+YLhIE4FG2y6YqxsrNtnmqqEN2iglVBqZdd+wpLdkumEfQPKw1stKA4wyfJz2KE\n205A+ssCI5pEY5f3sVe+xqAP1oydukOuTClJwgZH5BeJWr36ozH9cqL5+FZtyXMG\nTBGLx2zNAgMBAAECggEAEYMBJwjXid6Lmg98FyDj5NptjTDASQzj+TXde9TbfVVJ\n3hR07V7Zy2Cy36JJnzETyF6tFwHyTRTgESuozJRsy5Go0DaXBKi91bmGwO6j+5IZ\n8Udk/eeTjltgFMWe6PGiE2M80ZbOwOhMhc/toHd2/oV0S+YQmRM52y3sDHl7Xsza\n2F5iVqtE41UGOQi+ELhPV0DTA/hVKxe0cN2ZYDgGY2IKm+P4I1Y7mpuaU4pBrXZp\nBltcPGcK6PYSv5l7nwc1cYTfKctyDGya1DXimZEaXdyyKUSjqF4rZM6rP6R09r9m\n+NHlvV8t/4gyaCpcv0Vc9op8XV+kQd7V/D63sYns8QKBgQD2CBI0w+8GkrnokZFX\nVMY//REXrxWwRvvw0wL2F5l3Ej6l/luQbjgDIqDGTBpPjWyOHZxyXcYAQZOLLZ0J\na0KGMGJDnIZGTQR7lJH8lkQfIk1ylDhmB54nuG5sSB32Kaq5QF3qsdrAk2YdooTU\nSWYB0/j3eqUbkPnR3UMmuZ5f/QKBgQC+JXhwyw0U93z7hpNODwZ76TbVflsC0C6r\ngHdW0y31G5ioII1db91rGDPEdjviLVXWRfXdgKOdnq412ZMaQCs80v+YiO6nQ2R3\nHRilWC5iTJGKTgfLsca0wmFfIPkKFr1s7bToyX6ZVNBmnxeqqvJmP3LOJCYcR6LY\n7jnydrRREQKBgDXNtg2L+624UKenjd1HUMOVmDNRurB+FYKo4rDmoE0F1GWApo2D\nTQSCgh5bbjWPe/noR9pK344WySlapEj3B+lIk3Stuj+NgDl2WCagxez5F27DM0I8\n0D1ne956NvMqUYeJqAA3PNt4YJCChgHWu1QTAxM74veQUNGwTYsedKARAoGAGtrf\n7849wsBRfpS7KUMl/0oo3G5EHFmavc4fDLw2uW90WAqA7Lln5EA+z3iDbKZKgUDQ\nQMByW0iWAjUAeaymbqi+QKTWT/lMryYE3RVfN7Lou0faAgLRtaXearkVcz9S8ZeA\n/X+3yaAY7uV5SjlqktZTOJoSZ9wWO90pgf0R6oECgYANH1R7BSH4YWRitVICoIUm\nFSHpEhUdTDn8qULP8w9DaT4PvvBZchqiSP7WUAWNL3hnqSri/zI/yxKbOXPojSyt\niQmvqePjjLZgsiR4wKAZxiULDLKihf75vW5cMX0jXaEMXBkYLBLy7XdvGyLp1MhX\njCz+Dehj0pEiotskuQw5Fw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "calixto@plasma-primacy-239619.iam.gserviceaccount.com",
+  "client_id": "103617714715569987958",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/calixto%40plasma-primacy-239619.iam.gserviceaccount.com"
+}
