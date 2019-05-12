@@ -4,11 +4,11 @@ include_once APPPATH.'libraries/VisionApi.php';
 
 class Vision_Model extends CI_Model{
 
-/*public function transcricao($audio, $lang){
-    $api = new CloudSpeech_API();
-    $transcript = $api->transcript($audio, $lang);
-    return $transcript;
-    }*/
+public function label_use($imagem){
+    $vision = new Vision_Api();
+    $read_image = $vision->label($imagem);
+    return $read_image;
+}
     
 public function salvar(){
         $nome   = $this->input->post('imagem');
@@ -17,17 +17,17 @@ public function salvar(){
             'upload_path'   => './assets/images',
             'allowed_types' => 'gif|jpg|png|jpeg',
             'file_name'     => $nome
-        );      
+        ); 
+
         $this->load->library('upload');
         $this->upload->initialize($configuracao);
         if ($this->upload->do_upload('imagem')){
             echo 'Arquivo salvo com sucesso.';
-            var_dump($nome);
-            //redirect('vision/show_label/teste');
+            $file_data = $this->upload->data();
+            redirect('vision/show_label/'.$file_data['file_name']);
         }
         else
             echo $this->upload->display_errors();
-    }
-    
+    }  
 }
 

@@ -21,6 +21,9 @@ class Vision extends CI_Controller {
 
 	public function show_label($imagem){
 		$this->load->view('common/header');
+		$this->load->model('Vision_model','vision');
+		$vision->label_use()
 		$this->load->view('common/navbar');
+		$this->load->view('common/footer');
 	}
 }

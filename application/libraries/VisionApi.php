@@ -10,7 +10,7 @@ class VisionApi{
     public function label($img){
         putenv('GOOGLE_APPLICATION_CREDENTIALS=C:\xampp\htdocs\lp6_projeto2\key.json');
         #instantiates a client
-        $fileName = './assets/images/'.$img.'';
+        $fileName = './assets/images/'.$img;
         $imageAnnotator = new ImageAnnotatorClient();
 
         # the name of the image file to annotate
@@ -21,7 +21,7 @@ class VisionApi{
         # performs label detection on the image file
         $response = $imageAnnotator->labelDetection($image);
         $labels = $response->getLabelAnnotations();
-
+        
         if ($labels) {
             echo("Labels:" . PHP_EOL);
             foreach ($labels as $label) {
