@@ -5,7 +5,6 @@ require 'vendor/autoload.php';
 # imports the Google Cloud client library
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
-
 class VisionApi{
 
     public function label($img){
@@ -33,12 +32,6 @@ class VisionApi{
         }
         return $resultado;
     }
-
-    /*public function getALL(){
-        $sql = "SELECT * FROM imagem";
-        $res = $this->db->query($sql);
-        return $res->result_array();
-    }*/
 
 
 }

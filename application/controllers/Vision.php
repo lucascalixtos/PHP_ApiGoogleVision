@@ -38,7 +38,14 @@ class Vision extends CI_Controller {
 		$this->load->model('Vision_model', 'vision');
         $v['resultado'] = $this->vision->Historico();
         $this->load->view('historico_view', $v); 
+		$this->load->view('common/footer');
+	}
 
+	public function sobre(){
+		$this->load->view('common/header');
+		
+		$this->load->view('common/navbar');
+		$this->load->view('sobre_view');
 		$this->load->view('common/footer');
 	}
 }
