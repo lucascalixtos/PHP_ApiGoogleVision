@@ -8,7 +8,7 @@ use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 class VisionApi{
 
     public function label($img){
-        putenv('GOOGLE_APPLICATION_CREDENTIALS=C:\xampp\htdocs\lp2\at02\lucas_calixto\application\libraries\key.json');
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=key.json');
         #instantiates a client
         $fileName = './assets/images/'.$img;
         $imageAnnotator = new ImageAnnotatorClient();
