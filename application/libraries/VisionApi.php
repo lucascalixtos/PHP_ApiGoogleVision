@@ -5,11 +5,10 @@ require 'vendor/autoload.php';
 # imports the Google Cloud client library
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
-
 class VisionApi{
 
     public function label($img){
-        putenv('GOOGLE_APPLICATION_CREDENTIALS=C:\xampp\htdocs\lp6_projeto2\key.json');
+        putenv('GOOGLE_APPLICATION_CREDENTIALS='.base_url('assets/key.json'));
         #instantiates a client
         $fileName = './assets/images/'.$img;
         $imageAnnotator = new ImageAnnotatorClient();
@@ -33,12 +32,6 @@ class VisionApi{
         }
         return $resultado;
     }
-
-    /*public function getALL(){
-        $sql = "SELECT * FROM imagem";
-        $res = $this->db->query($sql);
-        return $res->result_array();
-    }*/
 
 
 }

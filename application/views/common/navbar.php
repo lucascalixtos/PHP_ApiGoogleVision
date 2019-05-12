@@ -18,7 +18,7 @@
         <a class="nav-link" href="<?php echo base_url('Vision/historico') ?>">Histórico</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('Vision/cloud_vision') ?>">Relatório</a>
+        <a class="nav-link" href="<?php echo base_url('Vision/sobre') ?>">O que é?</a>
       </li>
 
     </ul>
