@@ -32,5 +32,31 @@ class Vision_Model extends CI_Model{
         $data = array("img" => $imagem, "resultado" => $conteudo);
         $this->db->insert('imagem',$data);
     }
+
+    /*public function lista(){
+        $html = '';
+        $Vision = new VisionApi();
+        // organiza a lista e depois retorna o resultado
+        $data = $Vision->getAll();
+        $html .= '<table class="table mx-auto justify-content-center" >';
+        $html .= '<tr><th scope="col" class="justify-content-center" >Imagem</th><th scope="col" >Resultado</th><th scope="col" >ID</th></tr>';
+        foreach($data as $row){
+            $html .= '<tr>';
+            $html .= '<th scope="col"><img src="'.base_url('assets/image/'.$row['img']).'" width="120px"></th>';
+            $html .= '<th scope="col">'.$row['resultado'].'</th>';
+            $html .= '<th scope="col">'.$row['id'].'</th></tr>';
+            }
+            $html .= '</table>';
+            return $html;
+        }*/
+    
+    public function Historico(){
+        $sql = "SELECT * FROM imagem";
+        $res = $this->db->query($sql);
+        $data = $res->result();
+        return $data;
+    }
+
+
 }
 

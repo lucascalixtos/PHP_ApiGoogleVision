@@ -30,6 +30,15 @@ class Vision extends CI_Controller {
 		$conteudo = $this->vision->label_use($imagem);
 		$this->vision->salvarBanco($imagem, $conteudo);
 		$this->load->view('common/footer');
+	}
 
+	public function historico(){
+		$this->load->view('common/header');
+		$this->load->view('common/navbar');
+		$this->load->model('Vision_model', 'vision');
+        $v['resultado'] = $this->vision->Historico();
+        $this->load->view('historico_view', $v); 
+
+		$this->load->view('common/footer');
 	}
 }
