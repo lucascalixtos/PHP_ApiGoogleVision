@@ -6,9 +6,6 @@ class Vision extends CI_Controller {
 
 	public function index(){
         $this->load->view('common/header');
-  $api = new VisionApi();
-  $data = $api->label();
-
 		$this->load->view('common/navbar');
 		$this->load->view('common/footer');
 	}
@@ -19,11 +16,11 @@ class Vision extends CI_Controller {
 		$this->load->model('Vision_model','model');
 		$this->model->salvar();
 		$this->load->view('vision_form');
-		var_dump($_POST);
 		$this->load->view('common/footer');
 	}
 
 	public function show_label($imagem){
-		a;
+		$this->load->view('common/header');
+		$this->load->view('common/navbar');
 	}
 }

@@ -11,19 +11,23 @@ class Vision_Model extends CI_Model{
     }*/
     
 public function salvar(){
-    $nome   = $this->input->post('imagem');
-    $img    = $_FILES['imagem'];
-    $configuracao = array(
-        'upload_path'   => './assets/images',
-        'allowed_types' => 'gif|jpg|png|jpeg',
-        'file_name'     => $nome,
-    );      
-    $this->load->library('upload');
-    $this->upload->initialize($configuracao);
-    if ($this->upload->do_upload('imagem'))
-        echo 'Arquivo salvo com sucesso.';
-    else
-        echo $this->upload->display_errors();
-   }
+        $nome   = $this->input->post('imagem');
+        $img    = $_FILES['imagem'];
+        $configuracao = array(
+            'upload_path'   => './assets/images',
+            'allowed_types' => 'gif|jpg|png|jpeg',
+            'file_name'     => $nome
+        );      
+        $this->load->library('upload');
+        $this->upload->initialize($configuracao);
+        if ($this->upload->do_upload('imagem')){
+            echo 'Arquivo salvo com sucesso.';
+            var_dump($nome);
+            //redirect('vision/show_label/teste');
+        }
+        else
+            echo $this->upload->display_errors();
+    }
+    
 }
 
