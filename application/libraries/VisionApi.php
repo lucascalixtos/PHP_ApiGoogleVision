@@ -7,13 +7,13 @@ use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class VisionApi{
 
-    public function read_file(){
-        putenv('GOOGLE_APPLICATION_CREDENTIALS=C:\xampp\htdocs\lp6_projeto\key.json');
+    public function label($img){
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=C:\xampp\htdocs\lp6_projeto2\key.json');
         #instantiates a client
+        $fileName = './assets/images/'.$img.'';
         $imageAnnotator = new ImageAnnotatorClient();
 
         # the name of the image file to annotate
-        $fileName = 'C:\xampp\htdocs\lp6_projeto\banco.png';
 
         # prepare the image to be annotated
         $image = file_get_contents($fileName);
@@ -26,11 +26,12 @@ class VisionApi{
             echo("Labels:" . PHP_EOL);
             foreach ($labels as $label) {
                 echo($label->getDescription() . PHP_EOL);
+                
             }
         } else {
             echo('No label found' . PHP_EOL);
         }
-
+        return $labels;
         
 
     }
