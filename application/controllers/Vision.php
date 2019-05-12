@@ -14,16 +14,22 @@ class Vision extends CI_Controller {
 		$this->load->view('common/header');
 		$this->load->view('common/navbar');
 		$this->load->model('Vision_model','model');
-		$this->model->salvar();
+		
 		$this->load->view('vision_form');
+		$this->model->salvar();
 		$this->load->view('common/footer');
 	}
 
 	public function show_label($imagem){
 		$this->load->view('common/header');
-		$this->load->model('Vision_model','vision');
-		$vision->label_use()
 		$this->load->view('common/navbar');
+		$this->load->model('Vision_model','vision');
+		$data['imagem'] = $imagem;
+		$data['dados'] = $this->vision->label_use($imagem);
+		$this->load->view('result_view', $data);
+		$conteudo = $this->vision->label_use($imagem);
+		$this->vision->salvarBanco($imagem, $conteudo);
 		$this->load->view('common/footer');
+
 	}
 }

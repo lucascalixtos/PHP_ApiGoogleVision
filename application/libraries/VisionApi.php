@@ -21,17 +21,16 @@ class VisionApi{
         # performs label detection on the image file
         $response = $imageAnnotator->labelDetection($image);
         $labels = $response->getLabelAnnotations();
-        
+        $resultado = '';
         if ($labels) {
-            echo("Labels:" . PHP_EOL);
             foreach ($labels as $label) {
-                echo($label->getDescription() . PHP_EOL);
-                
+                //$label->getDescription() . PHP_EOL;
+                $resultado .= '<br>'.$label->getDescription();
             }
         } else {
             echo('No label found' . PHP_EOL);
         }
-        return $labels;
+        return $resultado;
         
 
     }
